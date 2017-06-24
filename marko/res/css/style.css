@@ -1,0 +1,250 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	color: #585858;
+	margin: 0;
+	font-size: 14px;
+	line-height: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+.bg-overlay{
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("http://lookedd.online/assets/img/bg/intro1.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 650px;
+    padding-top: 50px;
+}
+
+.navbar {
+   background: transparent;
+   border-color: transparent;
+   transition: 0.2s all linear;	
+}
+.navbar-default .navbar-brand{
+	color: #fff;
+	font-weight: 800;
+	font-size: 30px;
+	font-family: 'Montserrat',sans-serif;
+	padding: 20px 15px;
+	
+}
+.navbar-default .navbar-brand:hover{
+	color: #0099FF;
+}
+.navbar-default .navbar-nav>li>a{
+	font-size: 17px;
+	color: #fff;
+	padding: 20px 15px;
+	margin: 0 5px;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #0099FF;
+}
+.navbar-default .navbar-nav > .active > a{
+	background: transparent;
+    border-color: transparent;
+    color: #0099FF;
+ }
+ .active {
+   color: #0099FF;
+   transition: 0.5s ease-in;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+	background: transparent;
+    border-color: transparent;
+ 	color: #0099FF;
+}
+
+.navbar-default.change-color {
+	transition: background-color 0.5s ease;
+	background-color: #fff;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(221,221,221,1);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(221,221,221,1);
+    box-shadow: 3px 3px 3px 0px rgba(221,221,221,1);
+}
+.navbar-default.change-color a{
+    color: #585858 !important;
+}
+.navbar-default.change-color .active a{
+    color: #0099FF !important;
+}
+.navbar-default.change-color a:hover{
+    color: #0099FF !important;
+}
+
+@media (max-width: 768px){
+	.navbar{
+		background: #fff;
+	}
+	.navbar-default .navbar-brand{
+		color: #585858;
+	}
+	.navbar-default .navbar-nav>li>a{
+		color: #585858;
+		transition: 0.5s ease-in;
+	}
+}
+#content{
+	padding: 15%;
+	text-align: center;
+	color: #fff;
+}
+#content, h1{
+	font-weight: 400;
+	font-size: 36px;
+	padding-bottom: 3%;
+}
+#content, p{
+	font-size: 14px;
+	padding-bottom: 5%;
+	line-height: 27px;
+	font-weight: 400;
+}
+
+/*==========OUR SERVICES==========*/
+#our_services{
+	padding-top: 30px;
+	padding-bottom: 80px;
+	text-align: center;
+	background-color: #F8F8F8;
+}
+#our_services h3{
+	font-weight: 500;
+	font-size: 33px;
+	margin-top: -1px;
+}
+.fa-bolt{
+	color: #18A2FF;
+	font-size: 40px;
+}
+
+#our_services .icon_our_services h5{
+	font-size: 19px;
+	font-weight: 500;
+	color: #343434;
+}
+#our_services .icon_our_services h5:hover,
+#our_services .icon_our_services i:hover{
+	color: #18A2FF;
+	transition: 0.5s;
+}
+
+#our_services .icon_our_services i{
+	font-size: 40px;	
+}
+
+#our_services .space{
+	background: #fff;
+	border: 1px solid rgba(238,238,238,0.65);
+	padding: 30px 25px 20px;
+	margin-top: 35px;
+	border-radius: 2px;
+}
+#our_services .space:hover{
+	box-shadow: 0px 1px 10px 5px rgba(50,50,50,0.15);
+	transition: 0.5s;
+}
+.cable{
+	width: 30px;
+	height: 35px;
+}
+
+/*==========GALLERY==========*/
+#gallery{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+#gallery h3{
+	font-weight: 500;
+	font-size: 33px;
+	margin-top: 10px;
+	margin-bottom: 35px;
+}
+.gallery_categories{
+	display: block;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	margin-left: -40px;
+}
+
+.gallery_categories ul {
+	width: 100%;
+	text-align: center;
+}
+.gallery_categories > li{
+	list-style-type: none;
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-weight: 500; 
+}
+.gallery_categories > li:hover{
+	cursor: pointer;
+	color: #0099FF;
+}
+.fa-camera{
+	color: #18A2FF;
+	font-size: 30px;
+}
+#gallery img{
+	margin: 0 auto;
+}
+.pad{
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+/* ====animacija==== */
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 0.5%;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.hovereffect:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*==========FOOTER==========*/
+#contact{
+	background: #222328;
+	color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+	text-align: center;
+}
+#contact h3{
+	text-align: center;
+	font-size: 24px;
+}
+#contact p {
+	font-size: 18px;
+	margin-bottom: -30px;
+}
+
